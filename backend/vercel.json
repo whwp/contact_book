@@ -6,9 +6,15 @@
             "use": "@vercel/python"
         }
     ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "sql_app/sql_api.py"
+        }
+    ],
     "headers": [
         {
-            "source": "/api/(.*)",
+            "source": "/sql_app/(.*)",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
