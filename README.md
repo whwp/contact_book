@@ -14,7 +14,7 @@ Define `REACT_APP_API_SERVER_URL` in .env file
 
 ### Backend
 Create a .env file in backend project directory.
-Define `DB_PASSWORD`, `DB_REFERENCE_ID`, `CLIENT_URL` in .env file
+Define `DB_PASSWORD`, `DB_REFERENCE_ID` in .env file
 
 ### Deployment of the demo
 Frontend and backend on [Vercel](https://vercel.com/). Database on [Supabase](https://supabase.com/)

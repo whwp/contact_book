@@ -6,23 +6,13 @@ from sql_api import models, schemas, crud
 from sql_api.database import SessionLocal, engine
 from dotenv import load_dotenv
 
-load_dotenv()
-frontend_url = os.environ.get("FRONTEND_URL")
-
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-
-origins = [
-    frontend_url,
-]
-
-"""
 origins = [
     "*",
 ]
-"""
 
 app.add_middleware(
     CORSMiddleware,
