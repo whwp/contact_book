@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "sql_app/sql_api.py",
-            "use": "@vercel/python"
+            "use": "@now/python"
         }
     ],
     "routes": [
