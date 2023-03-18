@@ -6,7 +6,7 @@
             "use": "@vercel/python"
         }
     ],
-    "rewrites": [
+    "redirects": [
         {
             "source": "/(.*)",
             "destination": "/sql_app/sql_api"
