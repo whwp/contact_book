@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_
 
 from . import models, schemas
-from sql_app import models, schemas
+from sql_api import models, schemas
 
 def get_contacts(db: Session):
     return db.query(models.Contact).all()

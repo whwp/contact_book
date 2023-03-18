@@ -2,14 +2,14 @@
     "public": false,
     "builds": [
         {
-            "src": "sql_app/sql_api.py",
+            "src": "api/index.py",
             "use": "@vercel/python"
         }
     ],
-    "redirects": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/sql_app/sql_api"
+            "src": "/(.*)",
+            "dest": "api/index.py"
         }
     ]
 }

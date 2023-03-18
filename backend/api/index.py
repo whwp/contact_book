@@ -2,8 +2,8 @@ import os
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from sql_app import models, schemas, crud
-from sql_app.database import SessionLocal, engine
+from sql_api import models, schemas, crud
+from sql_api.database import SessionLocal, engine
 from dotenv import load_dotenv
 
 load_dotenv()
