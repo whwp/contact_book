@@ -6,10 +6,10 @@
             "use": "@vercel/python"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "sql_app/sql_api.py"
+            "source": "/(.*)",
+            "destination": "/sql_app/sql_api"
         }
     ]
 }
