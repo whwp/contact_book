@@ -14,7 +14,7 @@
     ],
     "headers": [
         {
-            "source": "/sql_app/(.*)",
+            "source": "/api/(.*)",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
