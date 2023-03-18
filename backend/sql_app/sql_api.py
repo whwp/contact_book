@@ -7,14 +7,14 @@ from sql_app.database import SessionLocal, engine
 from dotenv import load_dotenv
 
 load_dotenv()
-client_url = os.environ.get("CLIENT_URL")
+frontend_url = os.environ.get("FRONTEND_URL")
 
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
 origins = [
-    client_url,
+    frontend_url,
 ]
 
 app.add_middleware(
