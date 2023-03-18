@@ -6,10 +6,10 @@
             "use": "@vercel/python"
         }
     ],
-    "redirects": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/sql_app/sql_api"
+            "src": "/(.*)",
+            "dest": "sql_app/sql_api.py"
         }
     ]
 }
