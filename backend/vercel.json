@@ -1,0 +1,15 @@
+{
+    "public": false,
+    "builds": [
+        {
+            "src": "sql_app/sql_api.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "sql_app/sql_api.py"
+        }
+    ]
+}
