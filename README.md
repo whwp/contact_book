@@ -1,6 +1,6 @@
 # Online Personal Contact Book
 
-Demo: vercel.com
+Demo: https://contact-book-frontend-tau.vercel.app/
 
 * Developed a full stack online personal contact management application using Python and JavaScript
 * Implemented the server side REST APIs with CRUD operations of the contact book, using FastAPI

@@ -13,16 +13,16 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-"""
+
 origins = [
     frontend_url,
 ]
-"""
 
+"""
 origins = [
     "*",
 ]
-
+"""
 
 app.add_middleware(
     CORSMiddleware,
