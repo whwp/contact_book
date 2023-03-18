@@ -6,12 +6,6 @@
             "use": "@vercel/python"
         }
     ],
-    "rewrites": [
-        {
-            "src": "/(.*)",
-            "dest": "sql_app/sql_api.py"
-        }
-    ],
     "headers": [
         {
             "source": "/api/(.*)",
