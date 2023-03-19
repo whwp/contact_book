@@ -40,7 +40,6 @@ function AddContact(props) {
 
   useEffect(() => {
     console.log(isFirstLoading);
-    console.log(contact);
     //console.log(contact);
     if (isFirstLoading) {
       SetIsFirstLoading(false);
